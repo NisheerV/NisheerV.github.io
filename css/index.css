@@ -39,6 +39,8 @@
     padding: 0 40px;
   }
   
+
+
   .navbar .inner-width {
     display: flex;
     align-items: center;
@@ -59,7 +61,7 @@
   }
   
   .navbar-menu a:hover {
-    color: #ffa588 !important;
+    color: rgb(230, 112, 57) !important;
   }
   
   .sticky .navbar-menu a {
@@ -109,6 +111,11 @@
     justify-content: space-between;
   }
   
+  .active{
+    background-color: #ffa588;
+    color: white;
+    padding: 30px 20px 15px 20px;
+  }
   .heroComp {
     float: left;
     display: flex;
@@ -118,6 +125,39 @@
     flex-direction: column;
   }
   
+  /* .head-box{
+    background-color: #ffa588;
+    color: #fff;
+    width: 38%;
+    padding: 0px 10px;
+  } */
+
+  .head-box{
+    width: 300px;
+    margin: 15px 0px;
+    background: #ffa588;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    position: relative;
+  }
+
+  .sb1:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #ffa588;
+    border-top: 10px solid #ffa588;
+    border-bottom: 10px solid transparent;
+    right: 19px;
+    bottom: -19px;
+  }
+  
+
   .head-title {
     font-family: "Poppins", sans-serif;
     font-size: 32px;
@@ -125,6 +165,7 @@
     line-height: 48px;
   }
   
+
   .head-subtitle {
     font-family: "Poppins", sans-serif;
     font-size: 88px;
@@ -142,13 +183,14 @@
   
   .hackerImage {
     float: right;
-    width: 40%;
-    height: 40%;
+    width: 55%;
+    height: 55%;
   }
   
   #home .buttons {
     margin-top: 60px;
     text-align: center;
+    
   }
   
   #home .buttons a {
@@ -203,6 +245,7 @@
     border-radius: 50%;
     margin-right: 100px;
   }
+
   .icons {
     display: flex;
   }
@@ -236,7 +279,7 @@
     border-radius: 3px;
     left: calc(50% - 150px);
   }
-  
+
   .service {
     width: calc(30% - 10px);
     text-align: center;
@@ -319,11 +362,10 @@
   }
   
   .contact-form .btn {
-    width: 300px;
+    width: 150px;
     border: 2px solid #ffa588;
     padding: 5px;
     margin-top: 20px;
-    margin-left: auto;
     cursor: pointer;
     background-color: #ffa588;
     border-radius: 8px;
@@ -357,22 +399,23 @@
     padding-bottom: 10px;
     color: #ffa588;
   }
-  
+
+
   .contact-icon img {
     width: 25px;
     height: 25px;
   }
   
   footer {
-    background: #292b2e;
+    display: flex;
+    background: #ffa588;
     color: #fff;
     padding: 30px 0;
-    text-align: center;
+    align-items: center;
   }
   
   .copyright {
     font-size: 15px;
-    margin-bottom: 20px;
   }
   
   .copyright a {
@@ -388,7 +431,7 @@
     right: 40px;
     width: 40px;
     height: 50px;
-    background-color: #ffa588;
+    background-color: #f37c56;
     color: #fff;
     border: none;
     border-radius: 200px;
@@ -450,8 +493,22 @@
       align-content: center;
     }
   
+    .head-box{
+      width: 70%;
+    }
+
+    #home .buttons{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hackerImage{
+      display: none;
+    }
+
     .head-subtitle {
-      font-size: 30px;
+      font-size: 3em;
+      line-height: 1.5em;
     }
     .section-title {
       width: 100%;
@@ -459,6 +516,11 @@
       text-align: center;
     }
   
+    .active{
+      padding: 5px 0px;
+      text-align: center;
+    }
+
     .about {
       flex-direction: column;
       font-size: x-small;
@@ -489,10 +551,15 @@
       width: 100%;
       margin: 10px 0;
     }
-  
+ 
+    .contact-info::before{
+      left: calc(67% - 270px);
+    }
+
     .item {
       width: 100%;
       margin: 10px 0;
+      color: #fff;
     }
   }
   
@@ -510,4 +577,5 @@
       margin-top: 0;
       visibility: hidden;
     }
+
   }
